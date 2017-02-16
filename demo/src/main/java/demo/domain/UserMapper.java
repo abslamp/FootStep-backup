@@ -5,6 +5,10 @@ import org.apache.ibatis.annotations.*;
 /**
  * Created by new on 17-2-15.
  */
+/*
+Mybatis所有注解http://www.mybatis.org/mybatis-3/zh/java-api.html
+MyBatis注解动态SQL http://www.cnblogs.com/zhangminghui/p/4903351.html
+ */
 public interface UserMapper {
 
     /*
