@@ -7,7 +7,7 @@ import demo.domain.User;
  */
 public interface UserService {
     User query(String name);
-    String upload(String name,Integer age);
+    String upload(User user);
     void update(String name , Integer age);
     void delete(Long id);
 }

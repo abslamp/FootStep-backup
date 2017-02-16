@@ -24,13 +24,13 @@ public class UserController {
         return service.query(name);
     }
 
-    //通过 POST 方法访问 localhost:8888/test 向database添加数据
+    //通过 POST 方法访问 localhost:8888/test 向database添加数据,可以直接传入POJO
     @RequestMapping(value = "" , method = RequestMethod.POST)
-    public String upload(String name, Integer age){
-        return service.upload(name,age);
+    public String upload(User user){
+        return service.upload(user);
     }
 
-    //通过 PUT 方法访问 localhost:8888/test 向database更新数据
+    //通过 PUT 方法访问 localhost:8888/test 向database更新数据，也可以传变量
     @RequestMapping(value = "" , method = RequestMethod.PUT)
     public void update( String name, Integer age){
         service.update(name,age);

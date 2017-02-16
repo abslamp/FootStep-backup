@@ -18,14 +18,14 @@ public interface UserMapper {
     @Select("SELECT * FROM user WHERE name = #{name}")
     User findByName(@Param("name") String name);
     @Insert("INSERT INTO user(name, age) VALUES(#{name}, #{age})")
-    int insert(@Param("name") String name, @Param("age") Integer age);
+    int insert(User user);
 
     /*
         #{name} 与 #{age}
         默认为User类中的变量
     */
     @Update("UPDATE user SET age=#{age} WHERE name=#{name}")
-    void update(User user);
+    void update(@Param("name") String name, @Param("age") Integer age);
     @Delete("DELETE FROM user WHERE id =#{id}")
     void delete(Long id);
 

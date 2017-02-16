@@ -21,14 +21,14 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public String upload(String name, Integer age) {
-        mapper.insert(name,age);
+    public String upload(User user) {
+        mapper.insert(user);
         return "success";
     }
 
     @Override
     public void update(String name, Integer age) {
-        mapper.update(new User(name,age));
+        mapper.update(name,age);
     }
 
     @Override
