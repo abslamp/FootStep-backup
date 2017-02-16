@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/test")
 public class UserController {
 
+    //在js里设定请求方式与url而不是在html里，具体例子在resources/static/index.html
     @Autowired
     UserService service;
     //通过 Get 方法访问 localhost:8888/test/sunlian 可查询 sunlian 在database中的信息
@@ -36,7 +37,7 @@ public class UserController {
     }
 
     //通过 DELETE 方法访问 localhost:8888/test/0 向database删除数据id为0的数据
-    @RequestMapping(value = "/{id}" , method = RequestMethod.PUT)
+    @RequestMapping(value = "/{id}" , method = RequestMethod.DELETE)
     public void delete(@PathVariable Long id){
         service.delete(id);
     }
