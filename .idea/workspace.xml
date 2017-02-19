@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b561078b-1c66-419a-a2ed-c3eed1eceba8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Department.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Project.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectAndDepartment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectAndPrp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectAndUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Prp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FootStep.iml" afterPath="$PROJECT_DIR$/FootStep.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-gateway/api-gateway.iml" afterPath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/daily-jobtime-report-service.iml" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/daily-jobtime-report-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Report.java" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Report.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/User.java" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/demo.iml" afterPath="$PROJECT_DIR$/demo/demo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,8 +25,8 @@
       <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            <state relative-caret-position="216">
+              <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -85,7 +71,6 @@
         <option value="$PROJECT_DIR$/demo/src/main/java/demo/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/demo/src/main/resources/static/index.html" />
         <option value="$PROJECT_DIR$/demo/src/main/java/demo/domain/UserMapper.java" />
-        <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/report.java" />
         <option value="$PROJECT_DIR$/demo/src/main/java/demo/DemoAppliction.java" />
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/DailyJobtimeReportApplication.java" />
@@ -98,6 +83,7 @@
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectAndDepartment.java" />
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectAndPrp.java" />
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectAndUser.java" />
+        <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -237,40 +223,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="soft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FootStep" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FootStep" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-jobtime-report-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="soft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -689,7 +641,7 @@
       <workItem from="1487312384330" duration="1914000" />
       <workItem from="1487388700410" duration="101000" />
       <workItem from="1487416255914" duration="14000" />
-      <workItem from="1487481069284" duration="10460000" />
+      <workItem from="1487481069284" duration="11008000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1487489469374</created>
@@ -712,11 +664,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487502605340</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="POJO">
+      <created>1487504320147</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1487504320147</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15408000" />
+    <option name="totallyTimeSpent" value="15956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -758,7 +717,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="POJO" />
+    <option name="LAST_COMMIT_MESSAGE" value="POJO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1020,8 +980,8 @@
         <state relative-caret-position="648">
           <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
-            <element signature="e#1447#1768#0" expanded="true" />
-            <element signature="e#1767#1768#0" expanded="true" />
+            <element signature="e#1447#1768#0" expanded="false" />
+            <element signature="e#1767#1768#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1061,7 +1021,7 @@
         <state relative-caret-position="468">
           <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1089,7 +1049,7 @@
         <state relative-caret-position="360">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1099,7 +1059,7 @@
         <state relative-caret-position="441">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1109,7 +1069,7 @@
         <state relative-caret-position="441">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1119,7 +1079,7 @@
         <state relative-caret-position="414">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1129,15 +1089,15 @@
         <state relative-caret-position="306">
           <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        <state relative-caret-position="216">
+          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
           <folding />
         </state>
       </provider>
