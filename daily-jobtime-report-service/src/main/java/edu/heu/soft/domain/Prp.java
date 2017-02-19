@@ -8,16 +8,12 @@ import lombok.NoArgsConstructor;
  * Created by mjrt on 2/19/2017.
  */
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-public class User {
+@AllArgsConstructor
+public class Prp {
 
     private Long id;
+    private String abbreviation;
     private String name;
-    private String passWord;
-    private String gender;
-    private boolean isLeader;
-    private String department;
-    private String edu;
-
+    private String remark;
 }

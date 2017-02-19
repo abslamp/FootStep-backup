@@ -12,15 +12,11 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Report {
+public class Project {
 
     private Long id;
     private String name;
-    private String project;
-    private String task;     //length = 4096
-    private Date date = new Date();
-    private double workLoad;
-    private double overTime;
-    private String state = "UNAUDITED";
+    private Date startTime;
+    private Date endTime;
 
 }
