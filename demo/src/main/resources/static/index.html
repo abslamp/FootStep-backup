@@ -16,6 +16,13 @@
     <p>age: <input id="age" type="text" name="age"></p>
     <input id="input_post" type="button" value="Post" onclick="userInsert()" />
 </form>
+
+<form id="form_put">
+    <p>name: <input id="update_name" type="text" name="name"></p>
+    <p>age: <input id="update_age" type="text" name="age"></p>
+    <input id="input_put" type="button" value="Put" onclick="userUpdate()" />
+</form>
+
 </body>
 <script src="jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
@@ -46,6 +53,33 @@
         $.ajax({
             url: 'http://localhost:8888/test',
             type: 'post',
+            data:{
+                "name" : name ,
+                "age" : age
+            },
+            headers: {
+                'Authorization': "12345"
+            },
+            success: function(data) {
+                console.log(data);
+            },
+            error: function(code, message, details) {
+                console.log(message);
+                console.log(code);
+                console.log(details);
+            }
+        });
+
+    }
+    function userUpdate() {
+
+        var name = document.getElementById("update_name").value;
+        var age = document.getElementById("update_age").value;
+
+        // AJAX 提交 PUT 请求
+        $.ajax({
+            url: 'http://localhost:8888/test',
+            type: 'put',
             data:{
                 "name" : name ,
                 "age" : age

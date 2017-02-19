@@ -1,33 +1,14 @@
 package demo.domain;
 
-import org.apache.ibatis.annotations.*;
+import org.apache.ibatis.annotations.Param;
 
 /**
- * Created by new on 17-2-15.
+ * Created by new on 17-2-16.
  */
-/*
-Mybatis所有注解http://www.mybatis.org/mybatis-3/zh/java-api.html
-MyBatis注解动态SQL http://www.cnblogs.com/zhangminghui/p/4903351.html
- */
+
 public interface UserMapper {
-
-    /*
-        #{name}         对应数据库的列
-        @Param("name")  对应java类中的变量
-     */
-    @Select("SELECT * FROM user WHERE name = #{name}")
     User findByName(@Param("name") String name);
-    @Insert("INSERT INTO user(name, age) VALUES(#{name}, #{age})")
-    int insert(User user);
-
-    /*
-        #{name} 与 #{age}
-        默认为User类中的变量
-    */
-    @Update("UPDATE user SET age=#{age} WHERE name=#{name}")
+    int insert(@Param("name") String name, @Param("age") Integer age);
     void update(@Param("name") String name, @Param("age") Integer age);
-    @Delete("DELETE FROM user WHERE id =#{id}")
-    void delete(Long id);
-
+    void delete(@Param("id") Long id);
 }
-
