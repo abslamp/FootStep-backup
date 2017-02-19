@@ -18,6 +18,8 @@
 
     <modules>
         <module>demo</module>
+        <module>daily-jobtime-report-service</module>
+        <module>api-gateway</module>
     </modules>
 
     <properties>
@@ -53,11 +55,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
         </dependency>
 
         <dependency>
