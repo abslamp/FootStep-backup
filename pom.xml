@@ -22,6 +22,8 @@
         <module>api-gateway</module>
         <module>timed-reminder</module>
         <module>dashboard</module>
+        <module>dashboard</module>
+        <module>neusoft-report</module>
     </modules>
 
     <properties>
