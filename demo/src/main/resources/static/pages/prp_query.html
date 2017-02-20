@@ -2333,14 +2333,30 @@ License: You must have a valid license purchased only from themeforest(the above
 
             }
 
+            function updatePage() {
+                $(".pagination li").removeClass("active");
+                $("#footstep_page_"+currentPage).addClass("active");
+                if(currentPage==1){
+                    $("#footstep_btn_prev").addClass("disabled");
+                }else{
+                    $("#footstep_btn_prev").removeClass("disabled");
+                }
+                if(currentPage==totalPage){
+                    $("#footstep_btn_next").addClass("disabled");
+                }else{
+                    $("#footstep_btn_next").removeClass("disabled");
+                }
+            }
+
             //进行一次AJAX并更新表格
             function doAjax(page) {
+                currentPage=page;
                 footstep_param.page=page;
                 $.ajax({
                     url: ajaxDataSource ,
                     type: ajaxType ,
                     data: footstep_param,
-                    success: function(data) {alert(data);updateTable(data);},
+                    success: function(data) {updateTable(data);updatePage();},
                     error: function(code, message, details) {
                         console.log(message);
                         console.log(code);
@@ -2357,7 +2373,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     url: ajaxDataRows ,
                     type: ajaxType ,
                     data: null ,
-                    success: function(data) {
+                    success: function(data) { //页面初始化过程，仅在刷新时执行
                         totalPage=Math.ceil(data/5);
                         console.log(totalPage);
                         //生成页码标记
