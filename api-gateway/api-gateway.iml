@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <dependency>spring_boot_tech.jinhaoma.ApiGatewayApplication</dependency>
+          <file>file://$MODULE_DIR$/src/main/java/tech/jinhaoma/ApiGatewayApplication.java</file>
+          <file>jar://$MAVEN_REPOSITORY$/io/springfox/springfox-schema/2.2.2/springfox-schema-2.2.2.jar!/springfox/documentation/schema/configuration/ModelsConfiguration.class</file>
+          <file>file://$MAVEN_REPOSITORY$/io/springfox/springfox-schema/2.2.2/springfox-schema-2.2.2.jar</file>
+          <file>jar://$MAVEN_REPOSITORY$/io/springfox/springfox-spring-web/2.2.2/springfox-spring-web-2.2.2.jar!/springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class</file>
+          <file>file://$MAVEN_REPOSITORY$/io/springfox/springfox-spring-web/2.2.2/springfox-spring-web-2.2.2.jar</file>
+          <file>jar://$MAVEN_REPOSITORY$/io/springfox/springfox-swagger-common/2.2.2/springfox-swagger-common-2.2.2.jar!/springfox/documentation/swagger/configuration/SwaggerCommonConfiguration.class</file>
+          <file>file://$MAVEN_REPOSITORY$/io/springfox/springfox-swagger-common/2.2.2/springfox-swagger-common-2.2.2.jar</file>
+          <file>jar://$MAVEN_REPOSITORY$/io/springfox/springfox-swagger2/2.2.2/springfox-swagger2-2.2.2.jar!/springfox/documentation/swagger2/configuration/Swagger2DocumentationConfiguration.class</file>
+          <file>file://$MAVEN_REPOSITORY$/io/springfox/springfox-swagger2/2.2.2/springfox-swagger2-2.2.2.jar</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
