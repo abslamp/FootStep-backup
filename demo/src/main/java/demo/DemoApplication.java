@@ -29,7 +29,7 @@ import java.util.Properties;
 @SpringBootApplication
 @EnableSwagger2
 @MapperScan("demo.domain")
-public class DemoAppliction {
+public class DemoApplication {
 
     @Bean
     public WebMvcConfigurer corsConfigurer() {
@@ -63,7 +63,7 @@ public class DemoAppliction {
                 .build();
     }
     public static void main(String[] args) {
-        SpringApplication.run(DemoAppliction.class,args);
+        SpringApplication.run(DemoApplication.class,args);
     }
 }
 
