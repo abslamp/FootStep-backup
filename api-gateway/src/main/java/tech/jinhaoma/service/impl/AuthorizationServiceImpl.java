@@ -4,8 +4,9 @@ import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tech.jinhaoma.common.Constant;
+import tech.jinhaoma.common.TokenUtils;
 import tech.jinhaoma.domain.LoginResponse;
-import tech.jinhaoma.domain.Token;
+import tech.jinhaoma.domain.TokenPayload;
 import tech.jinhaoma.domain.User;
 import tech.jinhaoma.domain.UserMapper;
 import tech.jinhaoma.service.AuthorizationService;
@@ -29,15 +30,14 @@ public class AuthorizationServiceImpl implements AuthorizationService {
 
         User user = mapper.query(name);
 
-        if(user == null){
+        if(user == null)
             return new LoginResponse("Not Found User");
-        }
 
         if (passWord.equals(user.getPassWord())){
 
             LoginResponse response = new LoginResponse();
             response.setState("Success");
-            response.setToken(Token.generateToken(name, Constant.MILLISECOND_ONE_DAY));
+            response.setToken(TokenUtils.generateToken(user, Constant.MILLISECOND_ONE_DAY,"RSA"));
             response.setUrl("https://www.baidu.com/");
             return response;
         } else {
@@ -52,14 +52,7 @@ public class AuthorizationServiceImpl implements AuthorizationService {
     }
 
     @Override
-    public boolean authorize(@Param("token") String tokenString,String userName) {
-        Token token = Token.parseToken(tokenString);
-        boolean flag =  token.getIss() != null &&
-                        token.getExp() != null &&
-                        token.getIat() != null &&
-                        token.getSub() == userName &&
-                        token.getIat()-System.currentTimeMillis() >= token.getExp();
-
-        return flag;
+    public boolean authorize(String token) {
+        return TokenUtils.checkToken(token);
     }
 }

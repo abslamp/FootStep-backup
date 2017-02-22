@@ -16,7 +16,7 @@ public class User {
     private String name;
     private String passWord;
     private String gender;
-    private boolean isLeader;
+    private int role;
     private String department;
     private String edu;
 

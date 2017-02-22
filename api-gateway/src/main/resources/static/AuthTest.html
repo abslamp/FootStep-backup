@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input id="submit" type="button" value="AuthTest" onclick="test()">
+</form>
+</body>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="jquery.cookie-1.4.1.min.js"></script>
+<script>
+    function test() {
+
+        $.ajax({
+            url: 'http://localhost:9001/auth',
+            type: 'post',
+            data:{
+                "token" : $.cookie('token')
+            },
+            success: function(data) {
+
+                alert(data);
+            },
+            error: function(code, message, details) {
+                console.log(message);
+                console.log(code);
+                console.log(details);
+            }
+        });
+    }
+</script>
+</html>

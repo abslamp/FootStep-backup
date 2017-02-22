@@ -11,15 +11,22 @@ import tech.jinhaoma.service.AuthorizationService;
  * Created by mjrt on 2/20/2017.
  */
 @RestController
-@RequestMapping(value = "/login")
 public class AuthorizationController {
 
     @Autowired
     AuthorizationService service;
 
-    @PostMapping
+    @PostMapping(value = "/login")
     public LoginResponse login(String userName , String passWord){
-        return service.login(userName,passWord);
+        LoginResponse res = service.login(userName,passWord);
+        System.out.println(res.getToken());
+        return res;
+//        return service.login(userName,passWord);
     }
 
+    @RequestMapping(value = "/auth")
+    public boolean AuthTest(String token){
+        System.out.println(token);
+        return service.authorize(token);
+    }
 }

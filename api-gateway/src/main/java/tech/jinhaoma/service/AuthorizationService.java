@@ -9,5 +9,5 @@ import tech.jinhaoma.domain.LoginResponse;
 public interface AuthorizationService {
     LoginResponse login(String name , String passWord);
     boolean logOut(String token);
-    boolean authorize(String token,String userName);
+    boolean authorize(String token);
 }

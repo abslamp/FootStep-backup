@@ -43,8 +43,9 @@
                         alert("PassWord Error");
                         break;
                     case "Success":
+//                        $.cookie('token', data.token, { expires: 7 });
                         $.cookie('token', data.token, { expires: 7 });
-                        window.location.href = data.url;
+//                        window.location.href = data.url;
                         break;
                 }
 
