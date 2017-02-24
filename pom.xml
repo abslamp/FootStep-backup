@@ -20,7 +20,8 @@
         <module>demo</module>
         <module>daily-jobtime-report-service</module>
         <module>api-gateway</module>
-        <module>timed-reminder</module>
+        <module>timer-reminder</module>
+
     </modules>
 
     <properties>

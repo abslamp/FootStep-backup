@@ -1,7 +1,7 @@
-package tech.timer.domain;
+package timer.domain;
 
 /**
- * Created by mjrt on 2/24/2017.
+ * Created by mjrt on 2/20/2017.
  */
 public interface UserMapper {
     User query(String name);

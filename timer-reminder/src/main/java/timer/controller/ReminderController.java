@@ -1,11 +1,12 @@
-package tech.timer.controller;
+package timer.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import tech.timer.domain.Report;
-import tech.timer.domain.ReportMapper;
+import timer.domain.Report;
+import timer.domain.ReportMapper;
+import timer.service.ReminderService;
 
 import java.util.Date;
 import java.util.List;
@@ -18,11 +19,11 @@ import java.util.List;
 public class ReminderController {
 
     @Autowired
-    ReportMapper mapper;
+    ReminderService service;
 
     @GetMapping
     List<Report> query(Date jmt){
-        return mapper.queryDateOrderByDate(jmt);
+        return service.query(jmt);
     }
 
 }

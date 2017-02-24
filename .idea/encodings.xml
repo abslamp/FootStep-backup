@@ -4,9 +4,8 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/daily-jobtime-report-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dashboard" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dashboard" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/timed-reminder" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/timer-reminder" charset="UTF-8" />
   </component>
 </project>

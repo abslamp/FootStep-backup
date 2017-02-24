@@ -1,4 +1,4 @@
-package tech.timer.domain;
+package timer.domain;
 
 import java.util.Date;
 import java.util.List;

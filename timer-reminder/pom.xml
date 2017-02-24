@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>timed-reminder</artifactId>
+    <artifactId>timer-reminder</artifactId>
 
     <dependencies>
 
@@ -80,4 +80,5 @@
         </dependency>
 
     </dependencies>
+
 </project>

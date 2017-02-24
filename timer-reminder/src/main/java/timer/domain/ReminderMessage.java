@@ -1,11 +1,11 @@
-package tech.timer.domain;
+package timer.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * Created by mjrt on 2/21/2017.
+ * Created by mjrt on 2/24/2017.
  */
 @Data
 @NoArgsConstructor

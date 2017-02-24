@@ -2,21 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b561078b-1c66-419a-a2ed-c3eed1eceba8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/controller/ReminderController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/Report.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/ReportMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/UserMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timed-reminder/src/main/resources/mapper/ReportMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timed-reminder/src/main/resources/mapper/UserMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timer-reminder/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timer-reminder/src/main/java/timer/TimerReminderApplication.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timer-reminder/src/main/java/timer/WebSocketConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timer-reminder/src/main/java/timer/controller/ReminderController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timer-reminder/src/main/java/timer/controller/WebSocketApi.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timer-reminder/src/main/java/timer/domain/ReminderMessage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timer-reminder/src/main/java/timer/domain/Report.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timer-reminder/src/main/java/timer/domain/ReportMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timer-reminder/src/main/java/timer/domain/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timer-reminder/src/main/java/timer/service/ReminderService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timer-reminder/src/main/java/timer/service/impl/ReminderServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timer-reminder/src/main/resources/application.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timer-reminder/src/main/resources/mapper/ReportMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timer-reminder/src/main/resources/mapper/UserMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timer-reminder/timer-reminder.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timed-reminder/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/TimedReminderApplication.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/WebSocketConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/controller/ReminderController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/controller/WebSocketApi.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/ReminderMessage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/Report.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/ReportMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/User.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/resources/application.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/resources/mapper/ReportMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/resources/mapper/UserMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timed-reminder/timed-reminder.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Report.java" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Report.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/User.java" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timed-reminder/pom.xml" afterPath="$PROJECT_DIR$/timed-reminder/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/jinhaoma/TimedReminderApplication.java" afterPath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/TimedReminderApplication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/jinhaoma/WebSocketConfig.java" afterPath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/WebSocketConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/jinhaoma/controller/WebSocketApi.java" afterPath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/controller/WebSocketApi.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/jinhaoma/domain/ChatMessage.java" afterPath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/ReminderMessage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/UserMapper.java" afterPath="$PROJECT_DIR$/timer-reminder/src/main/java/timer/domain/UserMapper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/resources/static/index.html" afterPath="$PROJECT_DIR$/timer-reminder/src/main/resources/static/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/resources/static/index2.html" afterPath="$PROJECT_DIR$/timer-reminder/src/main/resources/static/index2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/resources/static/jquery-2.1.1.min.js" afterPath="$PROJECT_DIR$/timer-reminder/src/main/resources/static/jquery-2.1.1.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/resources/static/jquery.cookie-1.4.1.min.js" afterPath="$PROJECT_DIR$/timer-reminder/src/main/resources/static/jquery.cookie-1.4.1.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/resources/static/reminder.js" afterPath="$PROJECT_DIR$/timer-reminder/src/main/resources/static/reminder.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/resources/static/sockjs.js" afterPath="$PROJECT_DIR$/timer-reminder/src/main/resources/static/sockjs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/timed-reminder/src/main/resources/static/stomp.js" afterPath="$PROJECT_DIR$/timer-reminder/src/main/resources/static/stomp.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,6 +52,7 @@
     <ignored path="$PROJECT_DIR$/api-gateway/target/" />
     <ignored path="$PROJECT_DIR$/timed-reminder/target/" />
     <ignored path="$PROJECT_DIR$/dashboard/target/" />
+    <ignored path="$PROJECT_DIR$/timer-reminder/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,75 +66,38 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ReminderController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/controller/ReminderController.java">
+      <file leaf-file-name="TimerReminderApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/java/timer/TimerReminderApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+            <state relative-caret-position="435">
+              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#673#674#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReportMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/resources/mapper/ReportMapper.xml">
+      <file leaf-file-name="ReminderServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/java/timer/service/impl/ReminderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="467">
+              <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/UserMapper.java">
+      <file leaf-file-name="ReminderService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/java/timer/service/ReminderService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Report.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/Report.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Project.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Project.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Report.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Report.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="324">
+              <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,9 +108,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Interface" />
-        <option value="Mybatis Mapper" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="mybatis-config" />
+        <option value="Mybatis Mapper" />
       </list>
     </option>
   </component>
@@ -151,24 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/timed-reminder/src/main/resources/static/index.html" />
-        <option value="$PROJECT_DIR$/timed-reminder/src/main/resources/static/index2.html" />
-        <option value="$PROJECT_DIR$/timed-reminder/src/main/resources/static/reminder.js" />
-        <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/DailyJobtimeReportApplication.java" />
-        <option value="$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/domain/Token.java" />
-        <option value="$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/domain/TokenHeader.java" />
-        <option value="$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/domain/TokenPayload.java" />
-        <option value="$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/service/AuthorizationService.java" />
-        <option value="$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/service/impl/AuthorizationServiceImpl.java" />
-        <option value="$PROJECT_DIR$/api-gateway/src/main/resources/static/test.html" />
-        <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/start-demo.bat" />
-        <option value="$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/common/EncrypRSA.java" />
-        <option value="$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/common/RSAUtils.java" />
-        <option value="$PROJECT_DIR$/api-gateway/src/main/resources/static/AuthTest.html" />
-        <option value="$PROJECT_DIR$/demo/src/main/resources/banner.txt" />
-        <option value="$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/common/CookieUtils.java" />
         <option value="$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/common/AuthorizationInterceptor.java" />
         <option value="$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/common/ZuulRouteFilter.java" />
         <option value="$PROJECT_DIR$/api-gateway/src/main/resources/static/index.html" />
@@ -196,12 +170,30 @@
         <option value="$PROJECT_DIR$/timed-reminder/src/main/resources/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/ReportMapper.java" />
         <option value="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/TimedReminderApplication.java" />
-        <option value="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/service/ReminderService.java" />
-        <option value="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/service/impl/ReminderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/controller/ReminderController.java" />
         <option value="$PROJECT_DIR$/timed-reminder/src/main/resources/mapper/ReportMapper.xml" />
         <option value="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/Report.java" />
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Report.java" />
+        <option value="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/service/impl/ReminderServiceImp.java" />
+        <option value="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/service/ReminderService.java" />
+        <option value="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/service/impl/ReminderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/controller/ReminderController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/timer-reminder/pom.xml" />
+        <option value="$PROJECT_DIR$/timer-reminder/src/main/java/timer/WebSocketConfig.java" />
+        <option value="$PROJECT_DIR$/timer-reminder/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/timer-reminder/src/main/java/timer/domain/ReminderMessage.java" />
+        <option value="$PROJECT_DIR$/timer-reminder/src/main/java/timer/domain/Report.java" />
+        <option value="$PROJECT_DIR$/timer-reminder/src/main/java/timer/domain/ReportMapper.java" />
+        <option value="$PROJECT_DIR$/timer-reminder/src/main/java/timer/domain/User.java" />
+        <option value="$PROJECT_DIR$/timer-reminder/src/main/java/timer/controller/WebSocketApi.java" />
+        <option value="$PROJECT_DIR$/timer-reminder/src/main/java/timer/domain/UserMapper.java" />
+        <option value="$PROJECT_DIR$/timer-reminder/src/main/resources/mapper/ReportMapper.xml" />
+        <option value="$PROJECT_DIR$/timer-reminder/src/main/resources/mapper/UserMapper" />
+        <option value="$PROJECT_DIR$/timer-reminder/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/timer-reminder/src/main/java/timer/TimerReminderApplication.java" />
+        <option value="$PROJECT_DIR$/timer-reminder/src/main/java/timer/controller/ReminderController.java" />
+        <option value="$PROJECT_DIR$/timer-reminder/src/main/java/timer/service/ReminderService.java" />
+        <option value="$PROJECT_DIR$/timer-reminder/src/main/java/timer/service/impl/ReminderServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -242,6 +234,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -264,7 +257,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="daily-jobtime-report-service" />
+              <option name="myItemId" value="timer-reminder" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -278,7 +271,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="daily-jobtime-report-service" />
+              <option name="myItemId" value="timer-reminder" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -296,7 +289,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="daily-jobtime-report-service" />
+              <option name="myItemId" value="timer-reminder" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -307,6 +300,10 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -318,7 +315,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="daily-jobtime-report-service" />
+              <option name="myItemId" value="timer-reminder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FootStep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FootStep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timer-reminder" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -334,7 +361,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="soft" />
+              <option name="myItemId" value="timer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -348,7 +375,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="daily-jobtime-report-service" />
+              <option name="myItemId" value="timer-reminder" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -364,7 +391,79 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="soft" />
+              <option name="myItemId" value="timer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FootStep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FootStep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timer-reminder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FootStep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FootStep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timer-reminder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -372,9 +471,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FootStep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FootStep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timer-reminder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
@@ -398,101 +530,23 @@
       <recent name="E:\Repositories\FootStep\daily-jobtime-report-service\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="timer.domain" />
       <recent name="tech.jinhaoma.domain" />
       <recent name="demo.domain" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Repositories\FootStep\timer-reminder\src\main\resources\mapper" />
+      <recent name="E:\Repositories\FootStep\timer-reminder\src\main\resources" />
       <recent name="E:\Repositories\FootStep\timed-reminder\src\main\resources\mapper" />
       <recent name="E:\Repositories\FootStep\timed-reminder\src\main\java\tech\jinhaoma\domain" />
       <recent name="E:\Repositories\FootStep\demo\src\main\resources" />
-      <recent name="E:\Repositories\FootStep" />
-      <recent name="E:\Repositories\FootStep\timed-reminder\src\main\resources\static" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.TimedReminderApplication">
     <configuration default="false" name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tech.jinhaoma.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="tech.jinhaoma.ApiGatewayApplication" />
-      <module name="api-gateway" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="TokenUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tech.jinhaoma.check.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="tech.jinhaoma.common.TokenUtils" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="api-gateway" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="EncrypRSA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tech.jinhaoma.check.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="tech.jinhaoma.common.EncrypRSA" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="api-gateway" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="EncrypRSA (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="EncrypRSA" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="tech.jinhaoma.ApiGatewayApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="api-gateway" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="RSAUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tech.jinhaoma.check.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="tech.jinhaoma.common.RSAUtils" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <module name="api-gateway" />
       <envs />
       <method />
@@ -830,6 +884,7 @@
     <configuration default="false" name="DemoAppliction" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="demo.DemoApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <module name="demo" />
       <envs />
       <method />
@@ -837,34 +892,28 @@
     <configuration default="false" name="DailyJobtimeReportApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="edu.heu.soft.DailyJobtimeReportApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <module name="daily-jobtime-report-service" />
       <envs />
       <method />
     </configuration>
     <configuration default="false" name="TimedReminderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="tech.timer.TimedReminderApplication" />
-      <module name="timed-reminder" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="timer.TimerReminderApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <module name="timer-reminder" />
       <envs />
       <method />
     </configuration>
-    <list size="8">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.DemoAppliction" />
       <item index="1" class="java.lang.String" itemvalue="Spring Boot.DailyJobtimeReportApplication" />
       <item index="2" class="java.lang.String" itemvalue="Spring Boot.TimedReminderApplication" />
       <item index="3" class="java.lang.String" itemvalue="Spring Boot.ApiGatewayApplication" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TokenUtils" />
-      <item index="5" class="java.lang.String" itemvalue="Application.EncrypRSA" />
-      <item index="6" class="java.lang.String" itemvalue="Application.EncrypRSA (1)" />
-      <item index="7" class="java.lang.String" itemvalue="Application.RSAUtils" />
     </list>
     <recent_temporary>
-      <list size="5">
+      <list size="1">
         <item index="0" class="java.lang.String" itemvalue="Spring Boot.ApiGatewayApplication" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TokenUtils" />
-        <item index="2" class="java.lang.String" itemvalue="Application.RSAUtils" />
-        <item index="3" class="java.lang.String" itemvalue="Application.EncrypRSA" />
-        <item index="4" class="java.lang.String" itemvalue="Application.EncrypRSA (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -898,7 +947,8 @@
       <workItem from="1487762292437" duration="1200000" />
       <workItem from="1487813254415" duration="10598000" />
       <workItem from="1487899571208" duration="12053000" />
-      <workItem from="1487918688039" duration="2858000" />
+      <workItem from="1487918688039" duration="4404000" />
+      <workItem from="1487923114759" duration="2729000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1487489469374</created>
@@ -1005,11 +1055,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487908132232</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary=" fix">
+      <created>1487921572064</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1487921572064</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98995000" />
+    <option name="totallyTimeSpent" value="103270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1031,7 +1088,6 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24785408" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1042,6 +1098,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1059,7 +1116,8 @@
     <MESSAGE value="POJO fix" />
     <MESSAGE value="API-Gateway" />
     <MESSAGE value="User fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="User fix" />
+    <MESSAGE value=" fix" />
+    <option name="LAST_COMMIT_MESSAGE" value=" fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1076,148 +1134,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.2.RELEASE/spring-webmvc-4.3.2.RELEASE.jar!/org/springframework/web/servlet/HandlerInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="52" lean-forward="true" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/src/main/java/demo/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="20" column="71" lean-forward="false" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/code/java/jdk/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="744" column="0" lean-forward="false" selection-start-line="744" selection-start-column="0" selection-end-line="744" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/code/java/jdk/jre/lib/jce.jar!/javax/crypto/Cipher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="843" column="0" lean-forward="false" selection-start-line="843" selection-start-column="0" selection-end-line="843" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/common/EncrypRSA.java" />
-    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/resources/static/reminder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/common/RSAUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/resources/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-gateway/src/main/resources/static/AuthTest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/src/main/resources/banner.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="25" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/2017-02/app-2017-02-22-17-1.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2430">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/WebSocketConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/zuul/zuul-core/1.2.2/zuul-core-1.2.2.jar!/com/netflix/zuul/ZuulFilterResult.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-349">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/common/CookieUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/zuul/zuul-core/1.2.2/zuul-core-1.2.2.jar!/com/netflix/zuul/ZuulFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="53" column="41" lean-forward="false" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-gateway/src/main/resources/static/error404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/ApiGatewayApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding>
-            <element signature="e#1225#1226#0" expanded="false" />
-            <element signature="e#1277#1278#0" expanded="false" />
-            <element signature="e#2455#2456#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/InterceptorConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-gateway/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/controller/ErrorController.java" />
     <entry file="file://$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/check/AuthorizationInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -1278,18 +1194,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/timed-reminder/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1205">
-          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/timed-reminder/pom.xml" />
     <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -1298,10 +1206,170 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/ReminderMessage.java" />
+    <entry file="jar://D:/code/java/jdk/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="263" column="0" lean-forward="false" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/TimedReminderApplication.java" />
+    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/service/impl/ReminderServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/User.java" />
+    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/resources/mapper/UserMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/controller/WebSocketApi.java" />
+    <entry file="file://$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/controller/AuthorizationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Report.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/Report.java" />
+    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/UserMapper.java" />
+    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/ReportMapper.java" />
+    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/resources/mapper/ReportMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/service/impl/ReminderServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/controller/ReminderController.java" />
+    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/service/ReminderService.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.4.2.RELEASE/spring-boot-autoconfigure-1.4.2.RELEASE.jar!/org/springframework/boot/autoconfigure/jdbc/DataSourceProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="178" column="16" lean-forward="false" selection-start-line="178" selection-start-column="16" selection-end-line="178" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/resources/static/stomp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/java/timer/domain/ReminderMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/java/timer/domain/Report.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timer-reminder/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/domain/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="28" />
+          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/java/timer/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/java/timer/controller/WebSocketApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-154">
+          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/java/timer/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/resources/mapper/UserMapper">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/resources/mapper/ReportMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding>
+            <marker date="1487924084228" expanded="true" signature="278:340" ph="select * fro... report" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding>
+            <marker date="1487924159980" expanded="true" signature="267:304" ph="SELECT * FRO... USER" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1315,145 +1383,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/ReminderMessage.java">
+    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/java/timer/domain/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="162">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/code/java/jdk/src.zip!/java/lang/Class.java">
+    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/java/timer/domain/ReportMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="263" column="0" lean-forward="false" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/TimedReminderApplication.java">
+    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/java/timer/controller/ReminderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/ApiGatewayApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/java/timer/TimerReminderApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/java/timer/service/ReminderService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/service/ReminderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/service/impl/ReminderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/ReportMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/User.java">
+    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/java/timer/service/impl/ReminderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-          <folding>
-            <marker date="1487917979062" expanded="true" signature="267:304" ph="SELECT * FRO... USER" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/controller/WebSocketApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/controller/AuthorizationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/controller/ReminderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        <state relative-caret-position="467">
+          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/resources/mapper/ReportMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timed-reminder/src/main/java/tech/timer/domain/Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1509,11 +1503,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|daily-jobtime-report-service</last-edited>
+          <last-edited>timer-reminder</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

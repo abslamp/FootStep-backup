@@ -1,4 +1,4 @@
-package tech.timer.domain;
+package timer.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 import java.util.Date;
 
 /**
- * Created by mjrt on 2/19/2017.
+ * Created by mjrt on 2/24/2017.
  */
 @Data
 @AllArgsConstructor
@@ -26,3 +26,4 @@ public class Report {
     private String state = "UNAUDITED";
 
 }
+

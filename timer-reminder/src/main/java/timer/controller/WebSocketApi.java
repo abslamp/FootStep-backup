@@ -1,14 +1,14 @@
-package tech.timer.controller;
+package timer.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.web.bind.annotation.RestController;
-import tech.timer.domain.ReminderMessage;
+import timer.domain.ReminderMessage;
 
 /**
- * Created by mjrt on 2/21/2017.
+ * Created by mjrt on 2/24/2017.
  */
 @RestController
 public class WebSocketApi {
