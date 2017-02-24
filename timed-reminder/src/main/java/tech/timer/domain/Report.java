@@ -1,4 +1,4 @@
-package edu.heu.soft.domain;
+package tech.timer.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;

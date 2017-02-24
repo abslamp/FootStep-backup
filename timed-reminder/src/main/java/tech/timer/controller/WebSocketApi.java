@@ -1,11 +1,11 @@
-package tech.jinhaoma.controller;
+package tech.timer.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.web.bind.annotation.RestController;
-import tech.jinhaoma.domain.ChatMessage;
+import tech.timer.domain.ReminderMessage;
 
 /**
  * Created by mjrt on 2/21/2017.
@@ -18,7 +18,7 @@ public class WebSocketApi {
 
     @MessageMapping("/sendMessage")
     @SendTo("/topic/chat")
-    public ChatMessage sendMessage(ChatMessage message) throws Exception {
+    public ReminderMessage sendMessage(ReminderMessage message) throws Exception {
         Thread.sleep(200);
 
 //        String address = "";

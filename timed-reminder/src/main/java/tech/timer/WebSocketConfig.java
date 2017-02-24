@@ -1,4 +1,4 @@
-package tech.jinhaoma;
+package tech.timer;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
