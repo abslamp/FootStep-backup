@@ -21,7 +21,7 @@
         var passWord = document.getElementById("passWord").value;
 
         $.ajax({
-            url: 'http://localhost:9001/login',
+            url: 'http://localhost:9000/login',
             type: 'post',
             data:{
                 "userName" : userName ,
@@ -44,7 +44,8 @@
                         break;
                     case "Success":
 //                        $.cookie('token', data.token, { expires: 7 });
-                        $.cookie('token', data.token, { expires: 7 });
+                        $.cookie('token', data.token);
+//userName
 //                        window.location.href = data.url;
                         break;
                 }

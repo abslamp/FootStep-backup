@@ -29,4 +29,6 @@ public class AuthorizationController {
         System.out.println(token);
         return service.authorize(token);
     }
+
+
 }

@@ -18,7 +18,7 @@ public class Report {
     private String name;
     private String project;
     private String task;     //length = 4096
-    private Date date = new Date();
+    private Date jwt;
     private double workLoad;
     private double overTime;
     private String state = "UNAUDITED";

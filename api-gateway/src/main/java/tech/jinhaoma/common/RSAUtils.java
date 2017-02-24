@@ -22,14 +22,24 @@ public class RSAUtils {
     static RSAPrivateKey privateKey;
 
     static {
-        HashMap<String, Object> map = null;
+        KeyPair keyPair = null;
         try {
-            map = new RSAUtils().getKeys();
+            keyPair = getKeys();
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
-        publicKey = (RSAPublicKey) map.get("public");
-        privateKey = (RSAPrivateKey) map.get("private");
+        publicKey = (RSAPublicKey) keyPair.getPublic();
+        privateKey = (RSAPrivateKey) keyPair.getPrivate();
+
+        //模
+        String modulus = publicKey.getModulus().toString();
+        //公钥指数
+        String public_exponent = publicKey.getPublicExponent().toString();
+        //私钥指数
+        String private_exponent = privateKey.getPrivateExponent().toString();
+        //使用模和指数生成公钥和私钥
+        publicKey = RSAUtils.getPublicKey(modulus, public_exponent);
+        privateKey = RSAUtils.getPrivateKey(modulus, private_exponent);
     }
 
     public static String encrypt(String text){
@@ -57,16 +67,12 @@ public class RSAUtils {
      * @throws NoSuchAlgorithmException
      *
      */
-    public static HashMap<String, Object> getKeys() throws NoSuchAlgorithmException{
+    public static KeyPair getKeys() throws NoSuchAlgorithmException{
         HashMap<String, Object> map = new HashMap<String, Object>();
         KeyPairGenerator keyPairGen = KeyPairGenerator.getInstance("RSA");
         keyPairGen.initialize(1024);
         KeyPair keyPair = keyPairGen.generateKeyPair();
-        RSAPublicKey publicKey = (RSAPublicKey) keyPair.getPublic();
-        RSAPrivateKey privateKey = (RSAPrivateKey) keyPair.getPrivate();
-        map.put("public", publicKey);
-        map.put("private", privateKey);
-        return map;
+        return keyPair;
     }
     /**
      * 使用模和指数生成RSA公钥
@@ -158,12 +164,12 @@ public class RSAUtils {
         byte[] bcd = ASCII_To_BCD(bytes, bytes.length);
         System.err.println(bcd.length);
         //如果密文长度大于模长则要分组解密
-        String ming = "";
+        StringBuilder ming = new StringBuilder();
         byte[][] arrays = splitArray(bcd, key_len);
         for(byte[] arr : arrays){
-            ming += new String(cipher.doFinal(arr));
+            ming.append(new String(cipher.doFinal(arr)));
         }
-        return ming;
+        return ming.toString();
     }
     /**
      * ASCII码转BCD码
@@ -251,7 +257,6 @@ public class RSAUtils {
         }
         return arrays;
     }
-
 
 
 }

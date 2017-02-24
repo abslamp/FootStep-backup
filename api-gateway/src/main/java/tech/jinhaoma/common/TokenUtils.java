@@ -6,6 +6,8 @@ import tech.jinhaoma.domain.TokenHeader;
 import tech.jinhaoma.domain.TokenPayload;
 import tech.jinhaoma.domain.User;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.Base64;
@@ -60,6 +62,7 @@ public class TokenUtils {
         builder.append(payloadBase64);
 
         String signature = RSAUtils.encrypt(builder.toString());
+        System.out.println(RSAUtils.decrypt(signature));
         builder.append(".");
         builder.append(signature);
 
@@ -67,6 +70,11 @@ public class TokenUtils {
     }
 
     public static boolean checkToken(String token){
+
+        System.out.println("token:"+token);
+
+        if (token == null) return false;
+
         String[] value = token.split("[.]");
 
         if(value.length != 3)   return false;
@@ -75,7 +83,8 @@ public class TokenUtils {
         String payload = value[1];
         String signature = value[2];
 
-
+        System.out.println(header+"."+payload);
+        System.out.println(RSAUtils.decrypt(signature));
 
         String[] contrast = RSAUtils.decrypt(signature).split("[.]");
         String headerContrast = new String(Base64.getDecoder().decode(contrast[0]));
@@ -100,5 +109,30 @@ public class TokenUtils {
         }
 
         return payload;
+    }
+
+    public static void main(String[] args) {
+
+        User user = new User();
+        user.setId(0L);
+        user.setRole(1);
+        user.setDepartment("123");
+        user.setEdu("heu");
+
+        String token = generateToken(user,Constant.MILLISECOND_ONE_DAY,"RSA");
+        System.out.println(token);
+        String[] array = token.split("[.]");
+        String org = RSAUtils.decrypt(array[2]);
+        System.out.println(org);
+    }
+
+    public static String getCookieValueFormRequest(String name , HttpServletRequest request){
+
+        Cookie[] array = request.getCookies();
+        for (Cookie cookie : array){
+            if(name.equals(cookie.getName()))
+                return cookie.getValue();
+        }
+        return null;
     }
 }
