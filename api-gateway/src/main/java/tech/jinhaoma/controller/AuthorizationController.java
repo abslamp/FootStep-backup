@@ -1,8 +1,10 @@
 package tech.jinhaoma.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import tech.jinhaoma.domain.LoginResponse;
 import tech.jinhaoma.service.AuthorizationService;
@@ -29,6 +31,8 @@ public class AuthorizationController {
         System.out.println(token);
         return service.authorize(token);
     }
+
+
 
 
 }

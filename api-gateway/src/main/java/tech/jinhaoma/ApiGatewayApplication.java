@@ -15,6 +15,7 @@ import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
+import tech.jinhaoma.check.ZuulAuthorizationFilter;
 
 /**
  * Created by mjrt on 2/20/2017.
@@ -24,6 +25,12 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 @EnableZuulProxy
 public class ApiGatewayApplication {
+
+
+    @Bean
+    public ZuulAuthorizationFilter accessFilter() {
+        return new ZuulAuthorizationFilter();
+    }
 
     @Bean
     public WebMvcConfigurer corsConfigurer() {

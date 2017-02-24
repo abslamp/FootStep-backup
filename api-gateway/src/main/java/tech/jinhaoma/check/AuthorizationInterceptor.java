@@ -18,8 +18,14 @@ public class AuthorizationInterceptor implements HandlerInterceptor {
         System.out.println(">>>MyInterceptor>>>>>>>在请求处理之前进行调用");
 
         String token = TokenUtils.getCookieValueFormRequest("token",request);
-        System.out.println(token);
-        return token!=null && TokenUtils.checkToken(token);
+
+        boolean flag = token!=null && TokenUtils.checkToken(token);
+        if(!flag){
+            request.getRequestDispatcher("/error404.html").forward(request, response);
+        }
+
+        System.out.println(String.format("%s request to %s", request.getMethod(), request.getRequestURL().toString()));
+        return flag;
     }
 
     @Override

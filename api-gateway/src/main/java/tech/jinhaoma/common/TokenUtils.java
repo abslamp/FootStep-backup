@@ -96,11 +96,14 @@ public class TokenUtils {
     }
 
     public static TokenPayload parseToken(String token){
-        String[] value = token.split("[.]");
-        String payloadBase64 = null;
 
+        if (token == null) return null;
+        String[] value = token.split("[.]");
+
+        String payloadBase64 = null;
         if (value.length==3)
             payloadBase64 = value[1];
+
         TokenPayload payload = null;
         try {
             payload =  objectMapper.readValue(Base64.getDecoder().decode(payloadBase64),TokenPayload.class);
