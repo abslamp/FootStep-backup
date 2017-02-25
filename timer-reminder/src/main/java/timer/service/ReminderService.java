@@ -9,6 +9,6 @@ import java.util.List;
  * Created by mjrt on 2/24/2017.
  */
 public interface ReminderService {
-    List<Report> queryReport(Date jmt);
-    void setMessage(int role);
+    List<Report> queryReport(Date jmt,int role);
+    void setMessage(String name, int role);
 }

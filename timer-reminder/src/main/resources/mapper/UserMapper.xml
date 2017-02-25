@@ -3,7 +3,7 @@
 <mapper namespace="timer.domain.UserMapper">
 
 
-    <select id="query" resultType="timer.domain.User">
+    <select id="findByName" resultType="timer.domain.User">
         SELECT * FROM USER WHERE NAME=#{name}
     </select>
 </mapper>
