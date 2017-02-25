@@ -22,6 +22,7 @@
         <module>api-gateway</module>
         <module>timed-reminder</module>
         <module>dashboard</module>
+        <module>dashboard</module>
     </modules>
 
     <properties>

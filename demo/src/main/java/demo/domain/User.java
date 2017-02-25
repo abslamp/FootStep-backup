@@ -1,52 +1,23 @@
 package demo.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 /**
- * Created by new on 17-2-15.
+ * Created by mjrt on 2/19/2017.
  */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
 
     private Long id;
     private String name;
-    private Integer age;
+    private String passWord;
+    private String gender;
+    private int role;
+    private String department;
+    private String edu;
 
-    public User() {
-    }
-
-    public User(String name, Integer age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                '}';
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
 }
