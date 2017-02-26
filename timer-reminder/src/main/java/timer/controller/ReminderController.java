@@ -25,6 +25,8 @@ public class ReminderController {
     ReminderService service;
 
     boolean testTap = false;
+    boolean leaderTap = false;
+    boolean employeeTap = false;
 
     @GetMapping
     List<Report> query(Date jmt,int role){
@@ -32,8 +34,8 @@ public class ReminderController {
     }
 
     @GetMapping("/reminder")
-    void reminder(int role,String name){
-        service.setMessage(name,role);
+    void reminder(int role){
+        service.setMessage(role);
     }
 
     @GetMapping("/test")

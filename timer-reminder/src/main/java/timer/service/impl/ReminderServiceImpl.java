@@ -7,9 +7,7 @@ import timer.common.DateUtils;
 import timer.domain.*;
 import timer.service.ReminderService;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by mjrt on 2/24/2017.
@@ -24,6 +22,8 @@ public class ReminderServiceImpl implements ReminderService {
     ReminderMessageMapper messageMapper;
     @Autowired
     UserMapper userMapper;
+    @Autowired
+    DepartmentMapper departmentMapper;
 
     @Override
     public List<Report> queryReport(Date jmt,int role) {
@@ -39,34 +39,41 @@ public class ReminderServiceImpl implements ReminderService {
     }
 
     @Override
-    public void setMessage(String name, int role) {
+    public void setMessage(int role) {
 
         if (role == 3){
             remindEmployee();
         } else if (role < 3){
-            remindLeader(name);
+            remindLeader();
         }
     }
 
-    private void remindLeader(String name) {
+    private void remindLeader() {
         List<Report> reports = getReportByState("UNAUDITED");
-        if(reports != null && reports.size() != 0){
-            ReminderMessage message = new ReminderMessage();
-            message.setMessage("您有未审批的日报");
-            message.setLack(new Date());
-            message.setState(false);
-            message.setUserName(name);
-            messageMapper.insert(message);
+        Set<String> names = new HashSet<>();
+        List<String> res = new ArrayList<>();
+
+        for (Report report : reports){
+            names.add(report.getName());
         }
+
+        for (String name : names){
+            String department = userMapper.findByName(name).getDepartment();
+            String leader = departmentMapper.findByName(department).getLeader();
+            res.add(leader);
+        }
+
+        addMessageByName(res,"您还有日报未审批");
     }
 
     private void remindEmployee(){
         Date now = new Date();
+        String remark = "没有完成日报";
         List<Report> reports = queryReport(now,3);
         List<Date> lacks = null;
         if(!reports.get(0).getName().equals(reports.get(1).getName())){
             if((lacks = getLackDates(reports.get(0).getJmt(),now)) != null){
-                addMessageByDates(lacks,reports.get(0).getName());
+                addMessageByDates(lacks,reports.get(0).getName(),remark);
             }
         }
 
@@ -74,18 +81,18 @@ public class ReminderServiceImpl implements ReminderService {
             log.error("index"+i+":");
             if(reports.get(i-1).getName().equals(reports.get(i).getName())){
                 if((lacks = getLackDates(reports.get(i-1).getJmt(),reports.get(i).getJmt())) != null){
-                    addMessageByDates(lacks,reports.get(i-1).getName());
+                    addMessageByDates(lacks,reports.get(i-1).getName(),remark);
                 }
             } else {
                 if((lacks = getLackDates(reports.get(i-1).getJmt(),now)) != null){
-                    addMessageByDates(lacks,reports.get(i-1).getName());
+                    addMessageByDates(lacks,reports.get(i-1).getName(),remark);
                 }
             }
         }
     }
 
     private List<Report> getReportByState(String state){
-        return reportMapper.findByState(state);
+        return reportMapper.findByStateOrderByProjectAndName(state);
     }
 
     private List<Date> getLackDates(Date start , Date end){
@@ -126,14 +133,28 @@ public class ReminderServiceImpl implements ReminderService {
         return res;
     }
 
-    private void addMessageByDates(List<Date> dates,String name){
+    private void addMessageByDates(List<Date> dates,String name,String remark){
         for (Date lack : dates){
             ReminderMessage message = new ReminderMessage();
             message.setUserName(name);
             message.setLack(lack);
-            message.setMessage(message.getUserName()+":"+DateUtils.getFormatString(lack)+"没有完成日报");
+            message.setMessage(message.getUserName()+":"+DateUtils.getFormatString(lack)+remark);
             message.setState(false);
             messageMapper.insert(message);
         }
+    }
+
+    private void addMessageByName(List<String> names,String remark){
+
+        Date now = new Date();
+        for (String name : names){
+            ReminderMessage message = new ReminderMessage();
+            message.setUserName(name);
+            message.setLack(now);
+            message.setMessage(message.getUserName()+":"+DateUtils.getFormatString(now)+remark);
+            message.setState(false);
+            messageMapper.insert(message);
+        }
+
     }
 }

@@ -1,4 +1,4 @@
-package demo.domain;
+package timer.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,14 +10,10 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
+public class ProjectAndDepartment {
 
     private Long id;
-    private String name;
-    private String passWord;
-    private String gender;
-    private int role;
+    private String project;
     private String department;
-    private String edu;
 
 }

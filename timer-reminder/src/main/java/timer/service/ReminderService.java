@@ -10,5 +10,5 @@ import java.util.List;
  */
 public interface ReminderService {
     List<Report> queryReport(Date jmt,int role);
-    void setMessage(String name, int role);
+    void setMessage( int role);
 }

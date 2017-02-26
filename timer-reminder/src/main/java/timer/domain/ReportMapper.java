@@ -8,5 +8,5 @@ import java.util.List;
  */
 public interface ReportMapper {
     List<Report> findByDateOrderByDate(Date jmt);
-    List<Report> findByState(String state);
+    List<Report> findByStateOrderByProjectAndName(String state);
 }
