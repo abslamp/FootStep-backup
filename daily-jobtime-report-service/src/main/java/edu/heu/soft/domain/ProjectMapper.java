@@ -13,6 +13,7 @@ public interface ProjectMapper {
     List<Project> find(@Param("cond") Project cond, @Param("offset") int offset, @Param("total") int total);
     int getCount(Project cond);
 
+    Project findByName(String name);
     List<ProjectAndPrp> findPrpByProjectName(String name);
     List<ProjectAndUser> findUserByProjectName(String name);
     List<String> findUserStringByProjectName(String name);

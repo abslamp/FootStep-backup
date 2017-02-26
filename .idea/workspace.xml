@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b561078b-1c66-419a-a2ed-c3eed1eceba8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/common/CookieUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/ReportAuditController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/ReportAuditService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/impl/ReportAuditServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/ProjectWorkLoadController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectAndDepartmentMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectWorkLoad.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/ProjectWorkLoadService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/impl/ProjectWorkLoadServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ProjectAndDepartmentMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/DailyJobtimeReportApplication.java" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/DailyJobtimeReportApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Project.java" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Project.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectMapper.java" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ReportMapper.java" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ReportMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/impl/UnfinishedReportServiceImpl.java" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/impl/UnfinishedReportServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ProjectMapper.xml" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ProjectMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ReportMapper.xml" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ReportMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,8 +39,8 @@
       <file leaf-file-name="ReportMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ReportMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="12" />
+            <state relative-caret-position="324">
+              <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,67 +51,24 @@
       <file leaf-file-name="ReportMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ReportMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            <state relative-caret-position="597">
+              <caret line="59" column="54" lean-forward="false" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
               <folding>
-                <marker date="1488105269653" expanded="true" signature="232:245" ph="UPDATE Repor... " />
-                <marker date="1488105269653" expanded="true" signature="232:977" ph="UPDATE Repor... " />
-                <marker date="1488105269653" expanded="true" signature="1092:1160" ph="SELECT * FRO... REPORT" />
-                <marker date="1488105269653" expanded="true" signature="1267:1287" ph="SELECT * FRO... Report" />
+                <marker date="1488109740792" expanded="true" signature="232:245" ph="UPDATE Repor... " />
+                <marker date="1488109740792" expanded="true" signature="232:977" ph="UPDATE Repor... " />
+                <marker date="1488109740792" expanded="true" signature="1092:1160" ph="SELECT * FRO... REPORT" />
+                <marker date="1488109740792" expanded="true" signature="1267:1287" ph="SELECT * FRO... Report" />
+                <marker date="1488109740792" expanded="true" signature="2123:2170" ph="SELECT * FRO... Report" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Report.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Report.java">
+      <file leaf-file-name="ProjectWorkLoadServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/impl/ProjectWorkLoadServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReportAuditController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/ReportAuditController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="41" column="36" lean-forward="false" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1247#1248#0" expanded="true" />
-                <element signature="e#1292#1293#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReportAuditService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/ReportAuditService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UnfinishedReportServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/impl/UnfinishedReportServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+            <state relative-caret-position="219">
+              <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,45 +76,95 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReportAuditServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/impl/ReportAuditServiceImpl.java">
+      <file leaf-file-name="ProjectWorkLoadController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/ProjectWorkLoadController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+            <state relative-caret-position="570">
+              <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#query#0;class#ReportAuditServiceImpl#0" expanded="false" />
-                <element signature="method#queryBatch#0;class#ReportAuditServiceImpl#0" expanded="false" />
-                <element signature="method#queryBySubordinate#0;class#ReportAuditServiceImpl#0" expanded="false" />
-                <element signature="e#1693#1694#0" expanded="true" />
-                <element signature="e#1741#1742#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnfinishedReportController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/UnfinishedReportController.java">
+      <file leaf-file-name="ProjectWorkLoad.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectWorkLoad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="405">
+              <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#678#679#0" expanded="true" />
-                <element signature="e#720#721#0" expanded="true" />
-                <element signature="e#821#822#0" expanded="true" />
-                <element signature="e#883#884#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectAndDepartment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectAndDepartment.java">
+      <file leaf-file-name="ProjectMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="16" selection-end-column="30" />
+            <state relative-caret-position="271">
+              <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ProjectMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="72" column="50" lean-forward="true" selection-start-line="72" selection-start-column="50" selection-end-line="72" selection-end-column="50" />
+              <folding>
+                <marker date="1488109094035" expanded="true" signature="302:338" ph="SELECT * FRO... PROJECT" />
+                <marker date="1488109094035" expanded="true" signature="426:938" ph="SELECT * FRO... PROJECT" />
+                <marker date="1488109094035" expanded="true" signature="1589:1638" ph="SELECT * FRO... PROJECTANDPRP" />
+                <marker date="1488109094035" expanded="true" signature="1773:1823" ph="SELECT * FRO... PROJECTANDUSER" />
+                <marker date="1488109094035" expanded="true" signature="1936:1993" ph="SELECT USERN... PROJECTANDUSER" />
+                <marker date="1488109094035" expanded="true" signature="2140:2196" ph="SELECT * FRO... PROJECTANDDEPARTMENT" />
+                <marker date="1488109094035" expanded="true" signature="2314:2357" ph="SELECT * FRO... USER" />
+                <marker date="1488109094035" expanded="true" signature="2463:2509" ph="SELECT NAME USER" />
+                <marker date="1488109094035" expanded="true" signature="2599:2616" ph="SELECT * FRO... PRP" />
+                <marker date="1488109094035" expanded="true" signature="2709:2751" ph="SELECT * FRO... Project" />
+                <marker date="1488109094035" expanded="true" signature="2801:2885" ph="INSERT INTO PROJECT... " />
+                <marker date="1488109094035" expanded="true" signature="2934:3047" ph="UPDATE PROJE... " />
+                <marker date="1488109094035" expanded="true" signature="3690:3724" ph="DELETE FROM " />
+                <marker date="1488109094035" expanded="true" signature="3810:3871" ph="DELETE FROM " />
+                <marker date="1488109094035" expanded="true" signature="3951:4006" ph="DELETE FROM " />
+                <marker date="1488109094035" expanded="true" signature="4085:4139" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Project.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Project.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectAndDepartmentMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectAndDepartmentMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectAndDepartmentMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ProjectAndDepartmentMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+              <folding>
+                <marker date="1488109094134" expanded="true" signature="298:371" ph="SELECT PORJE... ProjectAndDepartment" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -167,8 +176,8 @@
       <list>
         <option value="HTML File" />
         <option value="mybatis-config" />
-        <option value="Mybatis Mapper" />
         <option value="Interface" />
+        <option value="Mybatis Mapper" />
         <option value="Class" />
       </list>
     </option>
@@ -183,8 +192,8 @@
       <find>Key</find>
       <find>run</find>
       <find>end</find>
-      <find>demo</find>
       <find>mapper</find>
+      <find>demo</find>
     </findStrings>
     <replaceStrings>
       <replace>now</replace>
@@ -209,13 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/timer-reminder/src/main/resources/mapper/ReminderMessageMapper.xml" />
-        <option value="$PROJECT_DIR$/timer-reminder/src/main/java/timer/TimerReminderApplication.java" />
-        <option value="$PROJECT_DIR$/timer-reminder/src/main/java/timer/Scheduled/ScheduledTask.java" />
-        <option value="$PROJECT_DIR$/api-gateway/src/main/java/tech/jinhaoma/common/TokenUtils.java" />
-        <option value="$PROJECT_DIR$/demo/src/main/java/demo/service/UserService.java" />
-        <option value="$PROJECT_DIR$/demo/src/main/java/demo/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/demo/src/main/java/demo/service/impl/PrpServiceImpl.java" />
         <option value="$PROJECT_DIR$/demo/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/timer-reminder/src/main/java/timer/domain/ProjectAndUser.java" />
         <option value="$PROJECT_DIR$/timer-reminder/src/main/java/timer/domain/ProjectAndDepartment.java" />
@@ -235,11 +237,9 @@
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/impl/PrpServiceImpl.java" />
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/DepartmentMapper.xml" />
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ProjectAndPrpMapper.xml" />
-        <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ProjectMapper.xml" />
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/PrpMapper.xml" />
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/DepartmentController.java" />
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/PrpController.java" />
-        <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectMapper.java" />
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/impl/ProjectServiceImpl.java" />
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/ProjectController.java" />
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/common/Pair.java" />
@@ -255,11 +255,20 @@
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/UnfinishedReportService.java" />
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/DailyJobtimeReportApplication.java" />
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/impl/UnfinishedReportServiceImpl.java" />
-        <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ReportMapper.java" />
-        <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ReportMapper.xml" />
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/ReportAuditController.java" />
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/impl/ReportAuditServiceImpl.java" />
         <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/ReportAuditService.java" />
+        <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/ProjectWorkLoadService.java" />
+        <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Project.java" />
+        <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ProjectMapper.xml" />
+        <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectAndDepartmentMapper.java" />
+        <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ProjectAndDepartmentMapper.xml" />
+        <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectMapper.java" />
+        <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ReportMapper.xml" />
+        <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectWorkLoad.java" />
+        <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ReportMapper.java" />
+        <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/impl/ProjectWorkLoadServiceImpl.java" />
+        <option value="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/ProjectWorkLoadController.java" />
       </list>
     </option>
   </component>
@@ -300,7 +309,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -607,12 +615,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.AdvancedConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path" value="D:/code/node.js/node" />
@@ -1073,7 +1082,8 @@
       <workItem from="1487918688039" duration="4404000" />
       <workItem from="1487923114759" duration="4335000" />
       <workItem from="1488001460917" duration="17858000" />
-      <workItem from="1488083701884" duration="19427000" />
+      <workItem from="1488083701884" duration="19501000" />
+      <workItem from="1488106049031" duration="3504000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1487489469374</created>
@@ -1229,11 +1239,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488093839754</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="main">
+      <created>1488105446675</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1488105446675</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142161000" />
+    <option name="totallyTimeSpent" value="145739000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1241,13 +1258,11 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33069083" sideWeight="0.49785408" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1258,13 +1273,15 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997735" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997735" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33069083" sideWeight="0.49785408" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1305,71 +1322,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/resources/mapper/DepartmentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <marker date="1488086308100" expanded="true" signature="294:351" ph="SELECT * FRO... DEPARTMENT" />
-            <marker date="1488086308100" expanded="true" signature="438:462" ph="SELECT * FRO... DEPARTMENT" />
-            <marker date="1488086308100" expanded="true" signature="552:597" ph="SELECT * FRO... DEPARTMENT" />
-            <marker date="1488086308100" expanded="true" signature="646:763" ph="INSERT INTO DEPARTMENT... " />
-            <marker date="1488086308100" expanded="true" signature="812:962" ph="UPDATE DEPAR... " />
-            <marker date="1488086308100" expanded="true" signature="1032:1069" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/java/timer/domain/DepartmentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="22" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/java/timer/controller/ReminderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Department.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/String2DateConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/PrpService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/ProjectService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="26" column="10" lean-forward="false" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/PrpMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1414,7 +1366,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#query#0;class#ReportAuditServiceImpl#0" expanded="false" />
+            <element signature="method#queryBatch#0;class#ReportAuditServiceImpl#0" expanded="false" />
+            <element signature="method#queryBySubordinate#0;class#ReportAuditServiceImpl#0" expanded="false" />
+            <element signature="e#1693#1694#0" expanded="true" />
+            <element signature="e#1741#1742#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1460,14 +1419,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/common/Pair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/common/Pair.java" />
     <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -1547,7 +1499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1555,7 +1506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1563,9 +1513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1585,12 +1532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
-          <folding>
-            <element signature="method#remindEmployee#0;class#ReminderServiceImpl#0" expanded="false" />
-            <element signature="method#getLackDates#0;class#ReminderServiceImpl#0" expanded="false" />
-            <element signature="method#addMessageByDates#0;class#ReminderServiceImpl#0" expanded="false" />
-            <element signature="method#addMessageByName#0;class#ReminderServiceImpl#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1598,39 +1539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ProjectMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <marker date="1488089456734" expanded="true" signature="302:338" ph="SELECT * FRO... PROJECT" />
-            <marker date="1488089456734" expanded="true" signature="426:938" ph="SELECT * FRO... PROJECT" />
-            <marker date="1488089456734" expanded="true" signature="1589:1638" ph="SELECT * FRO... PROJECTANDPRP" />
-            <marker date="1488089456734" expanded="true" signature="1773:1823" ph="SELECT * FRO... PROJECTANDUSER" />
-            <marker date="1488089456734" expanded="true" signature="1936:1993" ph="SELECT USERN... PROJECTANDUSER" />
-            <marker date="1488089456734" expanded="true" signature="2140:2196" ph="SELECT * FRO... PROJECTANDDEPARTMENT" />
-            <marker date="1488089456734" expanded="true" signature="2314:2357" ph="SELECT * FRO... USER" />
-            <marker date="1488089456734" expanded="true" signature="2463:2509" ph="SELECT NAME USER" />
-            <marker date="1488089456734" expanded="true" signature="2599:2616" ph="SELECT * FRO... PRP" />
-            <marker date="1488089456734" expanded="true" signature="2666:2750" ph="INSERT INTO PROJECT... " />
-            <marker date="1488089456734" expanded="true" signature="2799:2912" ph="UPDATE PROJE... " />
-            <marker date="1488089456734" expanded="true" signature="3555:3589" ph="DELETE FROM " />
-            <marker date="1488089456734" expanded="true" signature="3675:3736" ph="DELETE FROM " />
-            <marker date="1488089456734" expanded="true" signature="3816:3871" ph="DELETE FROM " />
-            <marker date="1488089456734" expanded="true" signature="3950:4004" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1653,14 +1561,6 @@
             <marker date="1488088497659" expanded="true" signature="1424:1529" ph="UPDATE PRP S... " />
             <marker date="1488088497659" expanded="true" signature="1599:1629" ph="DELETE FROM " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1706,18 +1606,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectAndDepartment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="16" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/UnfinishedReportController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="486">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#678#679#0" expanded="true" />
@@ -1731,15 +1623,15 @@
     <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/impl/UnfinishedReportServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+        <state relative-caret-position="864">
+          <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1760,40 +1652,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ReportMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding>
-            <marker date="1488105269653" expanded="true" signature="232:245" ph="UPDATE Repor... " />
-            <marker date="1488105269653" expanded="true" signature="232:977" ph="UPDATE Repor... " />
-            <marker date="1488105269653" expanded="true" signature="1092:1160" ph="SELECT * FRO... REPORT" />
-            <marker date="1488105269653" expanded="true" signature="1267:1287" ph="SELECT * FRO... Report" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ReportMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/ReportAuditController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
+        <state relative-caret-position="729">
           <caret line="41" column="36" lean-forward="false" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1805,7 +1666,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/impl/ReportAuditServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
+        <state relative-caret-position="756">
           <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1820,9 +1681,158 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/ReportAuditService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        <state relative-caret-position="432">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Report.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/ProjectWorkLoadService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="81" lean-forward="false" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectAndDepartment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/code/java/jdk/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="110" column="19" lean-forward="false" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectAndDepartmentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ProjectAndDepartmentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding>
+            <marker date="1488109094134" expanded="true" signature="298:371" ph="SELECT PORJE... ProjectAndDepartment" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ProjectMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="72" column="50" lean-forward="true" selection-start-line="72" selection-start-column="50" selection-end-line="72" selection-end-column="50" />
+          <folding>
+            <marker date="1488109094035" expanded="true" signature="302:338" ph="SELECT * FRO... PROJECT" />
+            <marker date="1488109094035" expanded="true" signature="426:938" ph="SELECT * FRO... PROJECT" />
+            <marker date="1488109094035" expanded="true" signature="1589:1638" ph="SELECT * FRO... PROJECTANDPRP" />
+            <marker date="1488109094035" expanded="true" signature="1773:1823" ph="SELECT * FRO... PROJECTANDUSER" />
+            <marker date="1488109094035" expanded="true" signature="1936:1993" ph="SELECT USERN... PROJECTANDUSER" />
+            <marker date="1488109094035" expanded="true" signature="2140:2196" ph="SELECT * FRO... PROJECTANDDEPARTMENT" />
+            <marker date="1488109094035" expanded="true" signature="2314:2357" ph="SELECT * FRO... USER" />
+            <marker date="1488109094035" expanded="true" signature="2463:2509" ph="SELECT NAME USER" />
+            <marker date="1488109094035" expanded="true" signature="2599:2616" ph="SELECT * FRO... PRP" />
+            <marker date="1488109094035" expanded="true" signature="2709:2751" ph="SELECT * FRO... Project" />
+            <marker date="1488109094035" expanded="true" signature="2801:2885" ph="INSERT INTO PROJECT... " />
+            <marker date="1488109094035" expanded="true" signature="2934:3047" ph="UPDATE PROJE... " />
+            <marker date="1488109094035" expanded="true" signature="3690:3724" ph="DELETE FROM " />
+            <marker date="1488109094035" expanded="true" signature="3810:3871" ph="DELETE FROM " />
+            <marker date="1488109094035" expanded="true" signature="3951:4006" ph="DELETE FROM " />
+            <marker date="1488109094035" expanded="true" signature="4085:4139" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ReportMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="59" column="54" lean-forward="false" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
+          <folding>
+            <marker date="1488109740792" expanded="true" signature="232:245" ph="UPDATE Repor... " />
+            <marker date="1488109740792" expanded="true" signature="232:977" ph="UPDATE Repor... " />
+            <marker date="1488109740792" expanded="true" signature="1092:1160" ph="SELECT * FRO... REPORT" />
+            <marker date="1488109740792" expanded="true" signature="1267:1287" ph="SELECT * FRO... Report" />
+            <marker date="1488109740792" expanded="true" signature="2123:2170" ph="SELECT * FRO... Report" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectWorkLoad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ReportMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/impl/ProjectWorkLoadServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/ProjectWorkLoadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

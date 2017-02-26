@@ -56,4 +56,7 @@
         </where>
 
     </select>
+    <select id="findByProject" resultType="edu.heu.soft.domain.Report">
+        SELECT * FROM Report WHERE PORJECT = #{project}
+    </select>
 </mapper>
