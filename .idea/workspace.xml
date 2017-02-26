@@ -2,40 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b561078b-1c66-419a-a2ed-c3eed1eceba8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/common/DateUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/DepartmentController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/ProjectController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/PrpController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/String2DateConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/UnfinishedReportController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/DepartmentMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/PrpMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ReportMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/UserMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/DepartmentService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/ProjectService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/PrpService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/UnfinishedReportService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/impl/DepartmentServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/impl/ProjectServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/impl/PrpServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/impl/UnfinishedReportServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/DepartmentMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ProjectAndPrpMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ProjectMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/PrpMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/ReportMapper.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/service/TestService.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/src/main/resources/static/js/dept_tree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/src/main/resources/static/js/footstep_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/src/main/resources/static/js/footstep_pre.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/src/main/resources/static/js/project_table.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Department.java" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Department.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Project.java" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Project.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectAndDepartment.java" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectAndDepartment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectAndPrp.java" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectAndPrp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectAndUser.java" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/ProjectAndUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Prp.java" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/Prp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/User.java" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/domain/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/daily-jobtime-report-service/src/main/resources/mapper/UserMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,11 +29,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="UnfinishedReportController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UnfinishedReportController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/UnfinishedReportController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="197">
+              <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#678#679#0" expanded="true" />
@@ -70,6 +41,16 @@
                 <element signature="e#806#807#0" expanded="true" />
                 <element signature="e#868#869#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dept_tree.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo/src/main/resources/static/js/dept_tree.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -237,7 +218,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="daily-jobtime-report-service" />
+              <option name="myItemId" value="demo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -251,25 +232,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="daily-jobtime-report-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FootStep" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FootStep" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-jobtime-report-service" />
+              <option name="myItemId" value="demo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -295,7 +258,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="daily-jobtime-report-service" />
+              <option name="myItemId" value="demo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -311,7 +274,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mapper" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -325,7 +288,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="daily-jobtime-report-service" />
+              <option name="myItemId" value="demo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -337,11 +300,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="soft" />
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -355,7 +322,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="daily-jobtime-report-service" />
+              <option name="myItemId" value="demo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -364,52 +331,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="soft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FootStep" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FootStep" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-jobtime-report-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="soft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -444,11 +365,11 @@
       <recent name="demo.domain" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Repositories\FootStep\demo\src\main\resources\static\js" />
       <recent name="E:\Repositories\FootStep\daily-jobtime-report-service\src\main\resources" />
       <recent name="E:\Repositories\FootStep\daily-jobtime-report-service\src\main\java\edu\heu\soft" />
       <recent name="E:\Repositories\FootStep\daily-jobtime-report-service\src\main\java\edu\heu\soft\controller" />
       <recent name="E:\Repositories\FootStep\daily-jobtime-report-service\src\main\java\edu\heu\soft\domain" />
-      <recent name="E:\Repositories\FootStep\timer-reminder\src\main\resources\mapper" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.DemoAppliction">
@@ -881,7 +802,7 @@
       <workItem from="1487918688039" duration="4404000" />
       <workItem from="1487923114759" duration="4335000" />
       <workItem from="1488001460917" duration="17858000" />
-      <workItem from="1488083701884" duration="9529000" />
+      <workItem from="1488083701884" duration="9716000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1487489469374</created>
@@ -1016,11 +937,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488087931557</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="&#10;main">
+      <created>1488093533638</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1488093533638</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132263000" />
+    <option name="totallyTimeSpent" value="132450000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1090,16 +1018,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/java/timer/service/ReminderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/timer-reminder/src/main/resources/mapper/ReminderMessageMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -1596,8 +1514,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/daily-jobtime-report-service/src/main/java/edu/heu/soft/controller/UnfinishedReportController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="197">
+          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#678#679#0" expanded="true" />
@@ -1605,6 +1523,14 @@
             <element signature="e#806#807#0" expanded="true" />
             <element signature="e#868#869#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/src/main/resources/static/js/dept_tree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
