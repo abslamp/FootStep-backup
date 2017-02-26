@@ -13,12 +13,14 @@ import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * Created by mjrt on 2/19/2017.
  */
 @SpringBootApplication
 @MapperScan("edu.heu.soft.domain")
+@EnableSwagger2
 public class DailyJobtimeReportApplication {
     @Bean
     public WebMvcConfigurer corsConfigurer() {

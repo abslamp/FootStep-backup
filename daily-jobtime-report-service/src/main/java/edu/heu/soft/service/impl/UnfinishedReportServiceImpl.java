@@ -34,6 +34,7 @@ public class UnfinishedReportServiceImpl implements UnfinishedReportService {
     @Override
     public Map<String, List<Date>> queryDepartment(String departmentName) {
         List<User> users = userMapper.findByDepartment(departmentName);
+        if (users == null)  return null;
         List<String> names = new ArrayList<>();
         for (User user : users){
             names.add(user.getName());
