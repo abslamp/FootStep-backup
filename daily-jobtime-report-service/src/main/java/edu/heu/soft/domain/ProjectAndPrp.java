@@ -17,4 +17,35 @@ public class ProjectAndPrp {
     private String prpName;
     private String prpAbbreviation;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getProject() {
+        return project;
+    }
+
+    public void setProject(String project) {
+        this.project = project;
+    }
+
+    public String getPrpName() {
+        return prpName;
+    }
+
+    public void setPrpName(String prpName) {
+        this.prpName = prpName;
+    }
+
+    public String getPrpAbbreviation() {
+        return prpAbbreviation;
+    }
+
+    public void setPrpAbbreviation(String prpAbbreviation) {
+        this.prpAbbreviation = prpAbbreviation;
+    }
 }
