@@ -8,6 +8,6 @@ import java.util.List;
 /**
  * Created by mjrt on 2/26/2017.
  */
-public interface ProjectWorkLoadService {
-    List<ProjectWorkLoad> query(String department , Date startDate , Date endDate);
+public interface WorkLoadService {
+    List<ProjectWorkLoad> queryByProject(String department , Date startDate , Date endDate);
 }

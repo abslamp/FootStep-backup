@@ -1,7 +1,7 @@
 package edu.heu.soft.service.impl;
 
 import edu.heu.soft.domain.*;
-import edu.heu.soft.service.ProjectWorkLoadService;
+import edu.heu.soft.service.WorkLoadService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +13,7 @@ import java.util.List;
  * Created by mjrt on 2/26/2017.
  */
 @Service
-public class ProjectWorkLoadServiceImpl implements ProjectWorkLoadService {
+public class WorkLoadServiceImpl implements WorkLoadService {
 
     @Autowired
     ProjectAndDepartmentMapper projectAndDepartmentMapper;
@@ -22,8 +22,9 @@ public class ProjectWorkLoadServiceImpl implements ProjectWorkLoadService {
     @Autowired
     ReportMapper reportMapper;
 
+
     @Override
-    public List<ProjectWorkLoad> query(String department, Date startDate, Date endDate) {
+    public List<ProjectWorkLoad> queryByProject(String department, Date startDate, Date endDate) {
         List<String> projectsName = projectAndDepartmentMapper.findProjectByDepartment(department);
         List<String> projects = new ArrayList<>();
 

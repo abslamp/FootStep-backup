@@ -1,7 +1,7 @@
 package edu.heu.soft.controller;
 
 import edu.heu.soft.domain.ProjectWorkLoad;
-import edu.heu.soft.service.ProjectWorkLoadService;
+import edu.heu.soft.service.WorkLoadService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,14 +15,14 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/workload")
-public class ProjectWorkLoadController {
+public class WorkLoadController {
 
     @Autowired
-    ProjectWorkLoadService service;
+    WorkLoadService service;
 
     @GetMapping
-    List<ProjectWorkLoad> query(String department , Date startDate , Date endDate){
-        return service.query(department,startDate,endDate);
+    List<ProjectWorkLoad> queryByProject(String department , Date startDate , Date endDate){
+        return service.queryByProject(department,startDate,endDate);
     }
 
 
