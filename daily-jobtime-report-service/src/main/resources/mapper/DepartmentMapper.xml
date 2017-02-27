@@ -22,6 +22,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         UPDATE DEPARTMENT SET NAME=#{dept.name}, LEADER=#{dept.leader}, RANK=#{dept.rank}, SUPERIORID=#{dept.superiorId}, REMARK=#{dept.remark} WHERE ID=#{id}
     </update>
 
+    <update id="clearLeader" parameterType="String">
+        UPDATE USER SET ROLE=0 WHERE DEPARTMENT=#{deptName} AND ROLE IN (0,1)
+    </update>
+
+    <update id="setLeader" parameterType="String">
+        UPDATE USER SET ROLE=1 WHERE NAME=#{name}
+    </update>
+
     <delete id="delete" parameterType="long">
         DELETE FROM DEPARTMENT WHERE ID=#{id}
     </delete>

@@ -30,6 +30,8 @@ public class DepartmentServiceImpl implements DepartmentService {
 
     @Override
     public int update(Long id, Department replace) {
+        departmentMapper.clearLeader(replace.getName());
+        departmentMapper.setLeader(replace.getLeader());//02.27-修改User表
         replace.setRank(getDeptRank(replace));
         return departmentMapper.update(id, replace);
     }
