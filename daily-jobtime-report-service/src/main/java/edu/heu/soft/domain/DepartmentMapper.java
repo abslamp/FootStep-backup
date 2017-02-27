@@ -18,6 +18,8 @@ public interface DepartmentMapper {
     Department findById(Long id);
     List<Department> findAll();
     int update(@Param("id") Long id, @Param("dept") Department dept);
+    int clearLeader(String deptName);
+    int setLeader(String name);
     int insert(Department target);
     int delete(Long id);
 
