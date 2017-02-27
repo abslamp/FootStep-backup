@@ -21,7 +21,7 @@
         <module>daily-jobtime-report-service</module>
         <module>api-gateway</module>
         <module>timer-reminder</module>
-
+        <module>dashboard</module>
     </modules>
 
     <properties>

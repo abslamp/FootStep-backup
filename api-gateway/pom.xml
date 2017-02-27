@@ -11,6 +11,10 @@
 
     <artifactId>api-gateway</artifactId>
 
+    <properties>
+        <start-class>tech.jinhaoma.ApiGatewayApplication</start-class>
+    </properties>
+
 
     <dependencies>
 

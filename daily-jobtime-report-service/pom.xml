@@ -11,6 +11,11 @@
 
     <artifactId>daily-jobtime-report-service</artifactId>
 
+    <properties>
+        <java.version>1.8</java.version>
+        <start-class>edu.heu.soft.DailyJobtimeReportApplication</start-class>
+    </properties>
+
     <dependencies>
 
         <dependency>

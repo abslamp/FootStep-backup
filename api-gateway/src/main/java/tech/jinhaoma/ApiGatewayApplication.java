@@ -26,7 +26,6 @@ import tech.jinhaoma.check.ZuulAuthorizationFilter;
 @EnableZuulProxy
 public class ApiGatewayApplication {
 
-
     @Bean
     public ZuulAuthorizationFilter accessFilter() {
         return new ZuulAuthorizationFilter();
