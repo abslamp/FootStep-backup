@@ -1,14 +1,14 @@
-package tech.jinhaoma;
-
-import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistration;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-import tech.jinhaoma.check.AuthorizationInterceptor;
-
-/**
- * Created by mjrt on 2/22/2017.
- */
+//package tech.jinhaoma;
+//
+//import org.springframework.context.annotation.Configuration;
+//import org.springframework.web.servlet.config.annotation.InterceptorRegistration;
+//import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+//import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+//import tech.jinhaoma.check.AuthorizationInterceptor;
+//
+///**
+// * Created by mjrt on 2/22/2017.
+// */
 //@Configuration
 //public class InterceptorConfiguration extends WebMvcConfigurerAdapter {
 //    @Override
