@@ -31,20 +31,7 @@ public class PersonSelectByDateController {
     * @return List<PersonSelectByDate> queryByDate 返回的值是个人日报查询（按时间） 作为数据源
     */
 
-    /*
-    *
-    * @param Num 数据源
-    * @param page 分页查询的页数
-    * @return List<PersonSelectByDate> selectByDate 返回所查询的数据
-    */
 
-    /*
-    *
-    * @param startTime 开始时间
-    * @param endTime 截止时间
-    * @param nanme 名字
-    * @return 返回查询后的行数，用于分页查询
-     */
 
 
     @RequestMapping(value = "/select")
@@ -58,6 +45,14 @@ public class PersonSelectByDateController {
         return datas;
     }
 
+    /*
+    *
+    * @param Num 数据源
+    * @param page 分页查询的页数
+    * @return List<PersonSelectByDate> selectByDate 返回所查询的数据
+    */
+
+
 
     @RequestMapping(value = "/work")
     public List<PersonSelectByDate> selectByDate( PersonSelectByDate PersonSelect,Integer page){
@@ -67,6 +62,14 @@ public class PersonSelectByDateController {
 
 
     }
+
+    /*
+    *
+    * @param startTime 开始时间
+    * @param endTime 截止时间
+    * @param name 名字
+    * @return 返回查询后的行数，用于分页查询
+     */
 
     @RequestMapping(value = "/rows")
 

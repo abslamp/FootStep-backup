@@ -27,20 +27,6 @@ public class DepartmentAllNumController {
     * @return List<DepartmentAllNum> Num 返回查询的部门汇总值 作为数据源
     */
 
-    /*
-    *
-    * @param Num 数据源
-    * @param page 分页查询的页数
-    * @return List<DepartmentAllNum> SelectNum 返回所查询的数据
-    */
-
-    /*
-    *
-    * @param startTime 开始时间
-    * @param endTime 截止时间
-    * @param department 部门
-    * return 返回行数 用于分页查询
-     */
 
 
 
@@ -53,11 +39,28 @@ public class DepartmentAllNumController {
         return service.Num(startTime,endTime,department);
     }
 
+    /*
+    *
+    * @param Num 数据源
+    * @param page 分页查询的页数
+    * @return List<DepartmentAllNum> SelectNum 返回所查询的数据
+    */
+
+
+
     @RequestMapping(value = "/work")
     public List<DepartmentAllNum> SelectNum (DepartmentAllNum Num,Integer page)
     {
         return service.SelectNum(Num,page);
     }
+
+    /*
+    *
+    * @param startTime 开始时间
+    * @param endTime 截止时间
+    * @param department 部门
+    * return 返回行数 用于分页查询
+     */
 
     @RequestMapping(value = "/rows")
     public int getCount(Date startTime,Date endTime,String department)

@@ -30,20 +30,7 @@ public class DepartmentUnauditedSelectController {
     * @return List<DepartmentUnauditedSelect> queryByDate 部门未审核查询返回数据源
     */
 
-    /*
-    *
-    * @param DepartmentSelect 数据源
-    * @param page 分页查询的页数
-    * @return List<DepartmentUnauditedSelect> SelectNum 返回所查询的数据
-    */
 
-    /*
-    *
-    * @param startTime 开始时间
-    * @param endTime 截止时间
-    * @param department 部门
-    * return  返回行数
-     */
 
 
     @RequestMapping(value = "/select")
@@ -57,6 +44,13 @@ public class DepartmentUnauditedSelectController {
         return datas;
     }
 
+    /*
+    *
+    * @param DepartmentSelect 数据源
+    * @param page 分页查询的页数
+    * @return List<DepartmentUnauditedSelect> SelectNum 返回所查询的数据
+    */
+
 
     @RequestMapping(value = "/work")
     public List<DepartmentUnauditedSelect> selectByDate( DepartmentUnauditedSelect DepartmentSelect,Integer page){
@@ -67,6 +61,13 @@ public class DepartmentUnauditedSelectController {
 
     }
 
+    /*
+   *
+   * @param startTime 开始时间
+   * @param endTime 截止时间
+   * @param department 部门
+   * return  返回行数
+    */
     @RequestMapping(value = "/rows")
 
     public int rowsCount(Date startTime,Date endTime,String department)

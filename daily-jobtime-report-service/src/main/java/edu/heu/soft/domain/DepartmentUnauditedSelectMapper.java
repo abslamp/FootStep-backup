@@ -12,12 +12,14 @@ import java.util.List;
 @Service
 public interface DepartmentUnauditedSelectMapper {
 
-     /*
+    /*
     *
     * @param startTime 开始时间
     * @param endTime 截止时间
     * @param department 部门
     */
+
+    List<DepartmentUnauditedSelect> QueryByDate(@Param("startTime") Date startTime, @Param("endTime") Date endTime, @Param("department") String department);
 
     /*
     *
@@ -26,16 +28,13 @@ public interface DepartmentUnauditedSelectMapper {
     * @param total 总计
     */
 
+    List<DepartmentUnauditedSelect> SelectByDate(@Param("DepartmentSelect") DepartmentUnauditedSelect PersonSelect, @Param("offset") int offset, @Param("total") int total);
     /*
     *
     * @param startTime 开始时间
     * @param endTime 截止时间
     * @param department 部门
-     */
-
-
-    List<DepartmentUnauditedSelect> QueryByDate(@Param("startTime") Date startTime, @Param("endTime") Date endTime, @Param("department") String department);
-    List<DepartmentUnauditedSelect> SelectByDate(@Param("DepartmentSelect") DepartmentUnauditedSelect PersonSelect, @Param("offset") int offset, @Param("total") int total);
+    */
 
     int getCount(@Param("startTime") Date startTime, @Param("endTime") Date endTime, @Param("department") String department);
 

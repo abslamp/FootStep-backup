@@ -22,22 +22,6 @@ public interface PersonSelectNameMapper {
     * @return List<PersonSelectName> SelectName 返回查询后的结果，作为下拉框的数据
     */
 
-    /*
-    *@param Leader 查找leader
-    * return int Select 返回leader的值
-    */
-
-    /*
-    * @param PersonSelectName SelectNotLeader 不是leader的查询方法
-    * @return PersonSelectName 返回查询结果
-     */
-
-    /*
-    * @param PersonSelectName SelectLeader 是leader的查询方法
-    * @return PersonSelectName 返回查询结果
-     */
-
-
 
     List<PersonSelectName>SelectName(PersonSelectName SelectNotLeader, PersonSelectName SelectLeader, Integer Leader);
     Integer SelectLeader(Integer Leader);

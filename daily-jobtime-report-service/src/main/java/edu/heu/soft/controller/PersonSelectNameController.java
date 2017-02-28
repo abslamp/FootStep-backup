@@ -26,30 +26,14 @@ public class PersonSelectNameController {
     @Autowired
     PersonSelectNameService service;
 
-      /*
+
+    /*
     *
     * @param PersonSelectName  SelectNotLeader  不是leader的查询结果
     * @param PersonSelectName  SelectLeader  是leader的查询结果
     * @param Integer Leader 判断是否为leader，0为否，1为是
     * @return List<PersonSelectName> SelectName 返回查询后的结果，作为下拉框的数据
     */
-
-    /*
-    *@param Leader 查找leader
-    * return int Select 返回leader的值
-    */
-
-    /*
-    * @param PersonSelectName SelectNotLeader 不是leader的查询方法
-    * @return PersonSelectName 返回查询结果
-     */
-
-    /*
-    * @param PersonSelectName SelectLeader 是leader的查询方法
-    * @return PersonSelectName 返回查询结果
-     */
-
-
     @RequestMapping(value = "/name")
 
     public List<PersonSelectName> SelectName(PersonSelectName SelectNotLeader,PersonSelectName SelectLeader,Integer Leader){
@@ -62,6 +46,13 @@ public class PersonSelectNameController {
         return service.SelectNameNotLeader(SelectNotLeader);
     }
 
+
+    /*
+    *@param Leader 查找leader
+    * return int Select 返回leader的值
+    */
+
+
     @RequestMapping(value ="leader")
 
     public int SelectLeader (int Leader)
@@ -69,11 +60,22 @@ public class PersonSelectNameController {
         return service.SelectLeader(Leader);
     }
 
+    /*
+    * @param PersonSelectName SelectNotLeader 不是leader的查询方法
+    * @return PersonSelectName 返回查询结果
+     */
+
+
     @RequestMapping(value ="nameNotLeader")
     public List<PersonSelectName> SelectName1(PersonSelectName SelectNotLeader){
         return service.SelectNameNotLeader(SelectNotLeader);
     }
 
+
+    /*
+    * @param PersonSelectName SelectLeader 是leader的查询方法
+    * @return PersonSelectName 返回查询结果
+     */
     @RequestMapping(value ="nameLeader")
     public List<PersonSelectName> SelectNameLeader(PersonSelectName SelectLeader){
         return service.SelectNameLeader(SelectLeader);
