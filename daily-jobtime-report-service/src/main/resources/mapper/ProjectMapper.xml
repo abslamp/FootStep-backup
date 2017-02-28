@@ -15,7 +15,6 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             <where>
                 <if test="cond.name!=null and cond.name!=''">
                     AND NAME=#{cond.name}
-                </if>
                 <if test="cond.startTime!=null">
                     AND STARTTIME >= #{cond.startTime}
                 </if>
