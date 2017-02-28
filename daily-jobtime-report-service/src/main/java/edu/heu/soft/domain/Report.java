@@ -23,6 +23,7 @@ public class Report {
     private Date jmt;
     private double workLoad;
     private double overTime;
-    private String state = "UNAUDITED";
+    private String prp;
+    private String state;
 
 }
