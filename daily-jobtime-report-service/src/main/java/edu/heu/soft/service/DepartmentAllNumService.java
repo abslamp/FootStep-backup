@@ -18,7 +18,7 @@ public interface DepartmentAllNumService {
     *  department 部门
     *  List<DepartmentAllNum> Num 返回查询的部门汇总值 作为数据源
     */
-
+    List<DepartmentAllNum> Num(Date startTime, Date endTime, String department);
     /*
     *
     *  Num 数据源
@@ -26,16 +26,14 @@ public interface DepartmentAllNumService {
     *  List<DepartmentAllNum> SelectNum 返回所查询的数据
     */
 
+
+    List<DepartmentAllNum> SelectNum(DepartmentAllNum num, Integer page);
     /*
     *
     *  startTime 开始时间
     *  endTime 截止时间
     *  department 部门
-     */
-
-
-    List<DepartmentAllNum> Num(Date startTime, Date endTime, String department);
-    List<DepartmentAllNum> SelectNum(DepartmentAllNum num, Integer page);
+   */
     int getCount(Date startTime, Date endTime, String department);
 
 }

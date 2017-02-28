@@ -19,13 +19,15 @@ public interface PersonSelectByDateService {
     * @param endTime 截止时间
     * @param name 名字
     */
-
-    /*
+    List<PersonSelectByDate> QueryByDate(Date startTime, Date endTime, String name);
+      /*
     *
     * @param SelectByDate 数据源
     * @param offset 分页页数
     * @param total 总计
     */
+
+    List<PersonSelectByDate> SelectByDate(PersonSelectByDate PersonSelect, Integer page);
 
     /*
     *
@@ -35,9 +37,6 @@ public interface PersonSelectByDateService {
      */
 
 
-
-    List<PersonSelectByDate> QueryByDate(Date startTime, Date endTime, String name);
-    List<PersonSelectByDate> SelectByDate(PersonSelectByDate PersonSelect, Integer page);
     int getCount(Date startTime, Date endTime, String name);
 
 

@@ -27,12 +27,6 @@ public class DepartmentAllNumController {
     * @return List<DepartmentAllNum> Num 返回查询的部门汇总值 作为数据源
     */
 
-
-
-
-
-
-
     @RequestMapping(value = "/num")
     public List<DepartmentAllNum> Num (Date startTime,Date endTime,String department){
 
@@ -45,8 +39,6 @@ public class DepartmentAllNumController {
     * @param page 分页查询的页数
     * @return List<DepartmentAllNum> SelectNum 返回所查询的数据
     */
-
-
 
     @RequestMapping(value = "/work")
     public List<DepartmentAllNum> SelectNum (DepartmentAllNum Num,Integer page)

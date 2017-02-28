@@ -24,8 +24,25 @@ public interface PersonSelectNameMapper {
 
 
     List<PersonSelectName>SelectName(PersonSelectName SelectNotLeader, PersonSelectName SelectLeader, Integer Leader);
+    /*
+    *@param Leader 查找leader
+    * return int Select 返回leader的值
+    */
+
+
     Integer SelectLeader(Integer Leader);
+    /*
+    * @param PersonSelectName SelectNotLeader 不是leader的查询方法
+    * @return PersonSelectName 返回查询结果
+     */
+
+
+
 
     List<PersonSelectName>SelectNameNotLeader(PersonSelectName SelectNotLeader);
+    /*
+* @param PersonSelectName SelectLeader 是leader的查询方法
+* @return PersonSelectName 返回查询结果
+ */
     List<PersonSelectName>SelectNameLeader(PersonSelectName SelectLeader);
 }
