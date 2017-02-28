@@ -37,9 +37,23 @@ public class PrpController {
     }
 
     @RequestMapping(value="delete")
-    public int delete(int id) {
-        System.out.println("Wanna delete "+id);
-        return 0;
+    public int delete(Long id) {
+        if(id == null) {
+            return 0;
+        }
+        return prpService.delete(id);
     }
+
+    @RequestMapping(value = "/update")
+    public int update(Prp replace) {
+        return prpService.update(replace.getId(),replace);
+    }
+
+    @RequestMapping(value = "/insert")
+    public int insert(Prp target){
+        target.setId(null); // flush it away
+        return prpService.insert(target);
+    }
+
 
 }

@@ -42,4 +42,14 @@ public class PrpServiceImpl implements PrpService {
     public int update(Long id, Prp replace) {
         return prpMapper.update(id,replace);
     }
+
+    @Override
+    public int delete(Long id) {
+        return prpMapper.delete(id);
+    }
+
+    @Override
+    public int insert(Prp target) {
+        return prpMapper.insert(target);
+    }
 }

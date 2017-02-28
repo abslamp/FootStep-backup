@@ -19,6 +19,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
                 <if test="cond.abbreviation!=null and cond.abbreviation!=''">
                     AND ABBREVIATION=#{cond.abbreviation}
                 </if>
+                <if test="cond.remark!=null and cond.remark!=''">
+                    AND REMARK=#{cond.remark}
+                </if>
             </where>
         </if>
         LIMIT #{offset},#{total}
