@@ -17,7 +17,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
                     AND NAME=#{cond.name}
                 </if>
                 <if test="cond.abbreviation!=null and cond.abbreviation!=''">
-                    AND ABBREVIATION=#{cond.name}
+                    AND ABBREVIATION=#{cond.abbreviation}
                 </if>
             </where>
         </if>
