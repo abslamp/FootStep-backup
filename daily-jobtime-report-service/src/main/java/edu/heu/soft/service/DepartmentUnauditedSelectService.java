@@ -19,6 +19,7 @@ public interface DepartmentUnauditedSelectService {
     * @param department 部门
     * @return List<DepartmentUnauditedSelect> QueryByDate 返回未审核部门值 作为数据源
     */
+    List<DepartmentUnauditedSelect> QueryByDate(Date startTime, Date endTime, String department);
 
     /*
     *
@@ -27,14 +28,13 @@ public interface DepartmentUnauditedSelectService {
     * @return List<DepartmentUnauditedSelect> SelectByDate 返回所查询的数据
     */
 
+    List<DepartmentUnauditedSelect> SelectByDate(DepartmentUnauditedSelect DepartmentSelect, Integer page);
+
     /*
     *
     * @param startTime 开始时间
     * @param endTime 截止时间
     * @param department 部门
      */
-
-    List<DepartmentUnauditedSelect> QueryByDate(Date startTime, Date endTime, String department);
-    List<DepartmentUnauditedSelect> SelectByDate(DepartmentUnauditedSelect DepartmentSelect, Integer page);
     int getCount(Date startTime, Date endTime, String department);
 }
